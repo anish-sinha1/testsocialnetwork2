@@ -8,6 +8,7 @@ import {
   AUTH_ERROR,
   LOGIN_SUCCESS,
   LOGIN_FAIL,
+  LOGOUT,
 } from "./types";
 
 interface req {
@@ -87,3 +88,11 @@ export const login: any =
       });
     }
   };
+
+//Logout
+
+export const logout = () => (dispatch: any) => {
+  dispatch({
+    type: LOGOUT,
+  });
+};
